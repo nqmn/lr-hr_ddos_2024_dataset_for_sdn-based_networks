@@ -1,6 +1,20 @@
-# LR-HR DDoS 2024 Dataset for SDN-Based Networks
+# LR-HR DDoS 2024 Dataset for SDN-Based Networks Proceprocessing Steps
+
+This repository contains a Jupyter Notebook demonstrating preprocessing steps for the LR-HR DDoS 2024 Dataset for SDN-Based Networks. The notebook includes code for loading, cleaning, feature selection, and exporting the dataset, designed for research on DDoS detection in SDN environments.
+
+## Features
+- Dataset Loading: Reads the LR-HR DDoS 2024 CSV dataset using pandas.
+- Exploratory Data Analysis: Basic inspection (shape, head/tail, summary statistics, protocol/label distributions).
+- Data Cleaning: Checks for missing values.
+- Manual Feature Selection: Drops irrelevant columns (protocol, srcport, dstport) for binary classification tasks.
+- Export: Saves the cleaned dataset as a new CSV file.
 
 ## About Dataset
+
+Taken from:
+```
+https://www.kaggle.com/datasets/abdussalamahmed/lr-hr-ddos-2024-dataset-for-sdn-based-networks
+```
 
 The landscape of network management has been transformed by the emergence of Software-Defined Networking (SDN), providing unparalleled adaptability. Yet, this progress also exposes networks to vulnerabilities, necessitating robust security measures. Understanding Distributed Denial-of-Service (DDoS) attacks, especially in SDN environments, is critical for defense strategies. Introducing LR-HR DDoS 2024, a comprehensive dataset encompassing both Low-Rate and High-Rate DDoS attacks within SDN contexts. This dataset reflects real-world conditions, integrating diverse attack vectors and intensities. Methodically constructed, it documents attack generation, network setup, and parameters for efficient utilization.
 
@@ -26,7 +40,3 @@ The dataset generation process involved:
 - Labeling traffic as normal (0) or malicious (1).
 - Running simulations for 2 hours, resulting in about 2,900,000 instances (124,000 rows, 24 columns).
 - The dataset encompasses wire and wireless topologies, combining normal and malicious traffic. It comprises 145,614 packets collected over the simulation, with 78,733 normal and 61,881 malicious packets. The traffic involves 56 hosts, each assigned IP addresses from 10.0.0.1 to 10.0.0.255.
-
-```
-https://www.kaggle.com/datasets/abdussalamahmed/lr-hr-ddos-2024-dataset-for-sdn-based-networks
-```
