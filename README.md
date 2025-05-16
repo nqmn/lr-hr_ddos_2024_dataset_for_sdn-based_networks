@@ -1,4 +1,5 @@
-# LR-HR DDoS 2024 Dataset for SDN-Based Networks Proceprocessing Steps
+# LR-HR DDoS 2024 Dataset for SDN-Based Networks
+## Proceprocessing Approaches
 
 This repository contains a Jupyter Notebook demonstrating preprocessing steps for the LR-HR DDoS 2024 Dataset for SDN-Based Networks. The notebook includes code for loading, cleaning, feature selection, and exporting the dataset, designed for research on DDoS detection in SDN environments.
 
@@ -8,6 +9,12 @@ This repository contains a Jupyter Notebook demonstrating preprocessing steps fo
 - Data Cleaning: Checks for missing values.
 - Manual Feature Selection: Drops irrelevant columns (protocol, srcport, dstport) for binary classification tasks.
 - Export: Saves the cleaned dataset as a new CSV file.
+
+## Dataset
+The original dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/abdussalamahmed/lr-hr-ddos-2024-dataset-for-sdn-based-networks).
+
+## License
+This project is provided for academic and research use. Please cite the dataset authors if you use this notebook.
 
 ## About Dataset
 
